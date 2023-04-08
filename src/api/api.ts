@@ -4,7 +4,7 @@ import axios from 'axios'
  * 数据请求相关配置
  */
 const api = axios.create({
-    baseURL: import.meta.url,
+    baseURL: import.meta.baseUrl,
     headers: {
         'Content-Type': 'application/json,charset=UTF-8'
     },
