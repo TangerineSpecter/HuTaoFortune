@@ -3,6 +3,8 @@ import MainView from '@/views/main/index.vue'
 import CreditCardView from '@/views/creditCard/index.vue'
 import PieChartView from '@/views/pieChart/index.vue'
 import SettingView from '@/views/setting/index.vue'
+import BudgetView from '@/views/budget/index.vue'
+import PeriodView from '@/views/period/index.vue'
 
 // 2. 定义一些路由
 // 每个路由都需要映射到一个组件。
@@ -16,6 +18,16 @@ const routes = [
                 path: '/main',
                 name: 'main',
                 component: MainView
+            },
+            {
+                path: '/budget',
+                name: 'budget',
+                component: BudgetView
+            },
+            {
+                path: '/period',
+                name: 'period',
+                component: PeriodView
             },
             {
                 path: '/credit-card',
