@@ -6,11 +6,11 @@
     style="height: 100%"
   >
     <template v-for="(item, i) in menus" :key="i">
-      <router-link :to="{ name: item.key }">
-        <el-menu-item
-          :index="item.index"
-          :class="{ buttom: i === menus.length - 1 }"
-        >
+      <router-link
+        :to="{ name: item.key }"
+        :class="{ buttom: i === menus.length - 1 }"
+      >
+        <el-menu-item :index="item.index">
           <el-icon :size="50">
             <component :is="item.icon" />
           </el-icon>
@@ -30,7 +30,7 @@ const { activeIndex } = getActiveIndex();
 </script>
 <style scoped lang="scss">
 .buttom {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;

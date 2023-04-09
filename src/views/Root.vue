@@ -48,8 +48,13 @@ import HeaderView from "@/components/layout/header/index.vue";
   top: 0;
 }
 
+.el-container {
+  height: 100vh;
+  width: 100%;
+}
+
 .main-box {
-  height: calc(100% - 60px);
+  // height: calc(100% - 60px);
   background: var(--el-bg-color-page);
 }
 </style>
