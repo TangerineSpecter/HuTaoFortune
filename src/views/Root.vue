@@ -1,7 +1,7 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-header style="background-color: cornflowerblue">
+      <el-header>
         <HeaderView></HeaderView>
       </el-header>
       <el-container>
