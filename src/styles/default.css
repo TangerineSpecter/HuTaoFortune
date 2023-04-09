@@ -9,10 +9,27 @@ body {
 		'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
 }
 
+:root {
+	--purple-color: rgb(202, 190, 255);
+	--green-color: rgb(182, 228, 202);
+	--red-color: rgb(255, 186, 187);
+	--orange-color: rgb(255, 181, 153);
+	--blue-color: rgb(153, 200, 255);
+	--sky-color: rgb(178, 228, 252);
+}
+
 .flex {
 	display: flex;
 }
 
 .flex-item {
 	flex: 1;
+}
+
+/* 卡片效果 */
+.card {
+	background-color: #fff;
+	border-radius: 8px;
+	min-height: 100px;
+	padding: 15px 15px;
 }
