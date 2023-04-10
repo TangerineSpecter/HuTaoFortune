@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 //引入全局样式和主题
 import "./styles/default.css"
+import "./styles/default.scss"
 //引入组件
 import ElementPlus from 'element-plus'
 //引入样式

@@ -1,0 +1,43 @@
+//引用样式
+.title {
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+    margin-left: 5px;
+
+    &::before {
+        content: "";
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 7px;
+        background-color: var(--purple-color);
+        border-radius: 4px;
+        margin-right: 6px;
+    }
+}
+
+//颜色卡
+*[data-color="purple"]:before {
+    background-color: var(--purple-color);
+}
+
+*[data-color="green"]:before {
+    background-color: var(--green-color);
+}
+
+*[data-color="red"]:before {
+    background-color: var(--red-color);
+}
+
+*[data-color="orange"]:before {
+    background-color: var(--orange-color);
+}
+
+*[data-color="blue"]:before {
+    background-color: var(--blue-color);
+}
+
+*[data-color="sky"]:before {
+    background-color: var(--sky-color);
+}

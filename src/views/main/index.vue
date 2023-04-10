@@ -43,14 +43,17 @@
       </el-row>
       <el-row>
         <el-col :span="24" class="card">
-          <p class="title" data-color="sky">我的资产</p>
+          <el-row>
+            <p class="title" data-color="sky">我的资产</p>
+            <el-button class="more-btn" :icon="Right" circle />
+          </el-row>
         </el-col>
       </el-row>
       <el-row :gutter="10">
         <el-col :span="12">
           <el-row>
             <el-col :span="24" class="card">
-              <p class="title" data-color="orange">本月支出趋势</p>
+              <MonthlyExpenses></MonthlyExpenses>
             </el-col>
           </el-row>
           <el-row>
@@ -73,6 +76,10 @@
     </el-col>
   </el-row>
 </template>
+<script setup lang="ts">
+import { Right } from "@element-plus/icons-vue";
+import MonthlyExpenses from "@/views/main/components/MonthlyExpenses.vue";
+</script>
 <style scoped lang="scss">
 .el-row {
   margin-bottom: 10px;
@@ -81,45 +88,11 @@
   margin-bottom: 0;
 }
 
-.title {
-  text-align: left;
-  display: flex;
-  font-weight: bold;
-  margin-left: 5px;
-  &::before {
-    content: "";
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 7px;
-    background-color: var(--purple-color);
-    border-radius: 4px;
-    margin-right: 6px;
-  }
-}
-
-*[data-color="purple"]:before {
-  background-color: var(--purple-color);
-}
-
-*[data-color="green"]:before {
-  background-color: var(--green-color);
-}
-
-*[data-color="red"]:before {
-  background-color: var(--red-color);
-}
-
-*[data-color="orange"]:before {
-  background-color: var(--orange-color);
-}
-
-*[data-color="blue"]:before {
-  background-color: var(--blue-color);
-}
-
-*[data-color="sky"]:before {
-  background-color: var(--sky-color);
+.more-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 </style>
 
