@@ -17,6 +17,7 @@
         <el-button size="large">默认账本</el-button>
         <el-button size="large">记账模板</el-button>
         <el-button size="large" type="primary">记一笔</el-button>
+        <el-button class="login-btn" size="large" type="primary" link>登录</el-button>
       </div>
     </el-col>
   </el-row>
@@ -85,5 +86,11 @@ import { Search } from "@element-plus/icons-vue";
   100% {
     width: 100%;
   }
+}
+
+.login-btn {
+  right: 3vh;
+  top: 2vh;
+  position: absolute;
 }
 </style>

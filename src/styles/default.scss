@@ -3,7 +3,12 @@
     text-align: left;
     display: flex;
     font-weight: bold;
-    margin-left: 5px;
+    margin-top: 0;
+    // margin-left: 5px;
+    // position: absolute;
+    // top: 20px;
+    // left: 20px;
+    // z-index: 1;
 
     &::before {
         content: "";
@@ -14,6 +19,43 @@
         background-color: var(--purple-color);
         border-radius: 4px;
         margin-right: 6px;
+    }
+}
+
+.logo-box {
+    border-radius: 15px;
+    padding-top: 7px;
+    width: var(--logoSize);
+    margin-bottom: 10px;
+
+    //默认
+    &-default {
+        @extend .logo-box;
+        background-color: rgb(237, 237, 243);
+    }
+
+    //收入
+    &-green {
+        @extend .logo-box;
+        background-color: rgb(221, 240, 233);
+    }
+
+    //支出
+    &-red {
+        @extend .logo-box;
+        background-color: rgb(252, 232, 231);
+    }
+
+    //转账
+    &-blue {
+        @extend .logo-box;
+        background-color: rgb(220, 234, 246);
+    }
+
+    //还款
+    &-purple {
+        @extend .logo-box;
+        background-color: rgb(224, 220, 248);
     }
 }
 
@@ -40,4 +82,42 @@
 
 *[data-color="sky"]:before {
     background-color: var(--sky-color);
+}
+
+*[data-color="yellow"]:before {
+    background-color: var(--yellow-color);
+}
+
+*[data-color="cyan"]:before {
+    background-color: var(--cyan-color);
+}
+
+*[data-color="grey"] {
+    color: var(--grey-color);
+}
+
+/* 金额 */
+.money {
+	font-weight: 700;
+	position: absolute;
+	font-size: 16px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+    &-red {
+        @extend .money;
+        color: #E8807B;
+    }
+    &-green {
+        @extend .money;
+        color: #6CDFB7;
+    }
+    &-blue {
+        @extend .money;
+        color: #4CA4FF;
+    }
+    &-purple {
+        @extend .money;
+        color: #6D59FE;
+    }
 }

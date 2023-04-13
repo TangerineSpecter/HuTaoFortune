@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "ZCOOLKuaiLe-Regular";
+    src: url('../assets/font/ZCOOLKuaiLe-Regular.ttf');
+}
+
+@font-face {
+    font-family: "NotoSansSC-Bold";
+    src: url('../assets/font/NotoSansSC-Bold.otf');
+}
+
+@font-face {
+    font-family: "NotoSansSC-Medium";
+    src: url('../assets/font/NotoSansSC-Medium.otf');
+}
+
+@font-face {
+    font-family: "HarmonyOS_Sans_Naskh_Arabic_UI_Bold";
+    src: url('../assets/font/HarmonyOS_Sans_Naskh_Arabic_UI_Bold.ttf');
+}

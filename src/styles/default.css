@@ -5,17 +5,32 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
-		'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+* {
+	/* font-family: 'HarmonyOS_Sans_Naskh_Arabic_UI_Bold', Arial, sans-serif; */
 }
 
 :root {
 	--purple-color: rgb(202, 190, 255);
-	--green-color: rgb(182, 228, 202);
+	--green-color: rgb(59, 162, 114);
+	--cyan-color: rgb(182, 228, 202);
 	--red-color: rgb(255, 186, 187);
 	--orange-color: rgb(255, 181, 153);
 	--blue-color: rgb(153, 200, 255);
 	--sky-color: rgb(178, 228, 252);
+	--yellow-color: rgb(250, 200, 88);
+	--grey-color: rgb(146, 150, 164);
+	--logoSize: 60px;
+}
+
+/* 矢量图标 */
+.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
 }
 
 .flex {
@@ -32,4 +47,32 @@ body {
 	border-radius: 8px;
 	min-height: 150px;
 	padding: 15px 15px;
+}
+
+/* logo样式 */
+.logo {
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 0; */
+	height: calc(var(--logoSize) * 0.8);
+	width: calc(var(--logoSize) * 0.8);
+	/* border: solid 1px var(--el-menu-border-color); */
+}
+
+.right {
+	position: absolute;
+	font-weight: 700;
+	right: 0;
+	top: 0;
+}
+
+.wallet {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.remark {
+	color: var(--grey-color);
+	font-weight: 500;
+	font-size: 14px;
 }

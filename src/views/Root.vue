@@ -2,14 +2,14 @@
   <div class="common-layout">
     <el-container>
       <el-header>
-        <HeaderView></HeaderView>
+        <HeaderView />
       </el-header>
       <el-container>
         <el-aside class="aside">
-          <MenuView></MenuView>
+          <MenuView />
         </el-aside>
         <el-main class="main-box">
-          <router-view></router-view>
+          <router-view />
         </el-main>
       </el-container>
     </el-container>

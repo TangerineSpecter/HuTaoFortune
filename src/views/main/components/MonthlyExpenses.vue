@@ -6,16 +6,10 @@
 import { ref, onMounted, onUnmounted } from "vue";
 
 import * as echarts from "echarts";
-
-const chartData = [
-  { name: "Java", value: 600 },
-  { name: "Python", value: 450 },
-  { name: "JavaScript", value: 400 },
-  { name: "TypeScript", value: 250 },
-  { name: "Ruby", value: 200 },
-];
+import { tr } from "date-fns/locale";
 
 const chartContainer = ref();
+const color = "rgb(228,104,98)";
 let chartDom: any;
 onMounted(() => {
   chartView();
@@ -31,7 +25,7 @@ function chartView() {
     xAxis: {
       type: "category",
       axisLabel: {
-        formatter: function (value) {
+        formatter: function (value: any) {
           return value.slice(8); // 只保留日
         },
       },
@@ -55,7 +49,6 @@ function chartView() {
     tooltip: {
       trigger: "axis",
       confine: true,
-      className: "echarts-tooltip echarts-tooltip-dark",
       backgroundColor: "rgba(0,0,0,0.8)",
       borderColor: "rgba(255,255,255,0)",
       textStyle: {
@@ -65,7 +58,7 @@ function chartView() {
         fontSize: 10,
       },
       //自定义展示
-      formatter: function (params) {
+      formatter: function (params: any) {
         return "￥" + params[0].value[1];
       },
     },
@@ -74,8 +67,10 @@ function chartView() {
         type: "line",
         smooth: 0.5,
         symbol: "none",
+        //标记大小
+        symbolSize: 12,
         lineStyle: {
-          color: "rgb(228,104,98)",
+          color: color,
           width: 3,
         },
         data: [
