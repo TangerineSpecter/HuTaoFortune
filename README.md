@@ -1,8 +1,9 @@
-# HuTaoFortune
+# HuTaoWallet
 *胡桃记账本*
 
 > ^_^没错就是原神那个大丘丘病了，二丘丘瞧，没事埋七七的胡桃。
 
+## 展示效果
 <img src="public/main.png">
 
 ## 项目介绍
