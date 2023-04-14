@@ -7,7 +7,7 @@
     HuTao Wallet
   </h1>
   <h4 align="center">
-    胡桃记账本
+    胡 桃 记 账 本，一款记录你日常开销的记账本系统
   </h4>
 </div>
 
@@ -19,7 +19,7 @@
         <img src="https://img.shields.io/badge/Vue-3.2.47-green.svg" alt="Vue Version">
     </a>
       <a href="#">
-        <img src="https://img.shields.io/badge/Element-plus-2.3.2-green.svg" alt="Element-plus Version">
+        <img src="https://img.shields.io/badge/Element Plus-2.3.2-green.svg" alt="Element Plus Version">
     </a>
 </p>
 
